@@ -11,19 +11,17 @@ window.addEventListener("load", function() {
     video.loop = false;
     console.log("Autoplay is set to", video.autoplay);
     console.log("Looping is set to", video.loop);
-
-});
-
-
 /* 
 	Play Button:
 	Play the video and update the volume information.
 */
-document.querySelector("#play").addEventListener("click", function() {
-    video.play();
-    console.log("Play Video");
-    document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
+	document.querySelector("#play").addEventListener("click", function() {
+	    video.play();
+	    console.log("Play Video");
+	    document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
+	});
 });
+
 
 
 /* 
