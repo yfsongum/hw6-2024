@@ -5,9 +5,8 @@ var video;
 	Initialize the video element and turn off autoplay and turn off looping.
 */
 window.addEventListener("load", function() {
-	console.log("Good job opening the window");
-
-	video = document.querySelector("#player1");
+    console.log("Good job opening the window");
+    video = document.querySelector("#player1");
     video.autoplay = false;
     video.loop = false;
     console.log("Autoplay is set to", video.autoplay);
@@ -21,8 +20,8 @@ window.addEventListener("load", function() {
 	Play the video and update the volume information.
 */
 document.querySelector("#play").addEventListener("click", function() {
-    console.log("Play Video");
     video.play();
+    console.log("Play Video");
     document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 });
 
@@ -31,8 +30,8 @@ document.querySelector("#play").addEventListener("click", function() {
 	Pause Button: Pause the video.
 */
 document.querySelector("#pause").addEventListener("click", function() {
-    console.log("Pause Video");
     video.pause();
+    console.log("Pause Video");
 });
 
 
